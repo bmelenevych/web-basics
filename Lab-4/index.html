@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Моя перша HTML-форма</h1>
+    <form class="form" action="https://httpbin.org/get" method="get">
+      <div class="form__element-wrapper">
+        <label>
+          Ім'я:
+          <input name="name" type="text" />
+        </label>
+      </div>
+      <div class="form__element">
+        <label for="birthdate">Дата народження: </label>
+        <input name="birthdate" type="date" />
+      </div>
+      <div class="form__element">
+        <label for="email">Імейл: </label>
+        <input name="email" type="email" />
+      </div>
+      <div class="form__element">
+        <label for="birthdate">Повідомлення: </label>
+        <textarea name="message"></textarea>
+      </div>
+      <div class="form__controls">
+        <label for="favourite_drink">Ваші улюблені напої: </label>
+        <label><input type="checkbox" name="favourite_drink" value="Кава" /> Кава </label>
+        <label><input type="checkbox" name="favourite_drink" value="Чай" /> Чай </label>
+        <label><input type="checkbox" name="favourite_drink" value="Пепсі" /> Пепсі </label>
+        <label><input type="checkbox" name="favourite_drink" value="Voda" /> Живчик </label>
+      </div>
+      <div class="form__controls">
+        <label for="nationality">Ваша національність: </label>
+        <label><input name="nationality" type="radio" value="Українець" />Українець</label>
+        <label><input name="nationality" type="radio" value="Українка" />Українка</label>
+        <label><input name="nationality" type="radio" value="Інше" />Інше</label>
+      </div>
+      <div class="form__controls">
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
+      </div>
+    </form>
+    <picture>
+      <source srcset="https://picsum.photos/1000/400" media="(min-width: 468px)" />
+      <img src="https://picsum.photos/300/500" />
+    </picture>
+  </body>
+</html>

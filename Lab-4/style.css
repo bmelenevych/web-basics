@@ -1,0 +1,10 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
